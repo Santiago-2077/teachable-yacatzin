@@ -1,0 +1,92 @@
+/* ================================================
+   RECICLAJE YACATZIN â€” Design System v2.0
+   Official Brand Palette Â· Production Ready
+   ================================================ */
+
+:root {
+    /* === Official Brand Colors === */
+    --green: #6BCB3D;
+    --green-hover: #4CAF50;
+    --green-soft: #E8F7E8;
+    --green-deep: #2D6A1F;
+
+    --blue: #2F80ED;
+    --blue-2: #56CCF2;
+    --blue-dark: #1C4E80;
+    --blue-soft: #EAF6FF;
+
+    --pink: #F29BB2;
+    --pink-soft: #FFE4EC;
+    --gold: #FFD166;
+
+    /* === Neutrals === */
+    --bg: #F5F7FA;
+    --surface: #FFFFFF;
+    --surface-2: #F0F7F4;
+    --text: #2D3748;
+    --muted: #6B7280;
+    --border: #E5E7EB;
+    --line: #E5E7EB;
+    /* alias */
+
+    /* === Gradients === */
+    --grad-main: linear-gradient(135deg, #56CCF2, #6BCB3D);
+    --grad-blue: linear-gradient(135deg, #2F80ED, #6BCB3D);
+    --grad-green: linear-gradient(135deg, #6BCB3D, #4CAF50);
+
+    /* === Shadows === */
+    --shadow: 0 4px 24px rgba(0, 0, 0, .07);
+    --shadow-lg: 0 8px 40px rgba(0, 0, 0, .11);
+    --shadow-green: 0 6px 28px rgba(107, 203, 61, .32);
+    --shadow-blue: 0 6px 28px rgba(47, 128, 237, .24);
+
+    /* === Structure === */
+    --radius: 16px;
+    --radius-sm: 12px;
+    --radius-lg: 24px;
+    --radius-pill: 999px;
+    --max: 1120px;
+}
+
+/* ========= BASE ========= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Work Sans", system-ui, sans-serif;
+    background:
+        radial-gradient(ellipse 1100px 640px at 10% -5%, rgba(107, 203, 61, .14), transparent 60%),
+        radial-gradient(ellipse 900px 620px at 92% 4%, rgba(86, 204, 242, .13), transparent 55%),
+        radial-gradient(ellipse 600px 400px at 18% 94%, rgba(255, 209, 102, .16), transparent 58%),
+        var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at 1px 1px, rgba(107, 203, 61, .07) 1px, transparent 0);
+    background-size: 28px 28px;
+    opacity: .65;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Space Grotesk", "Work Sans", sans-serif;
+    letter-spacing: -.01em;
+    line-height: 1.2;
+}
