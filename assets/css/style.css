@@ -100,7 +100,7 @@ h4 {
 }
 
 .logo {
-    width: 220px;
+    width: 420px;
     margin-bottom: 1.75rem;
     object-fit: contain;
 }
@@ -168,8 +168,14 @@ h4 {
     width: 100%;
 }
 
-.btn-start:hover { opacity: .85; }
-.btn-start:disabled { opacity: .5; cursor: not-allowed; }
+.btn-start:hover {
+    opacity: .85;
+}
+
+.btn-start:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
 
 .btn-stop {
     display: none;
@@ -199,7 +205,9 @@ h4 {
     display: none;
 }
 
-.result-box.visible { display: block; }
+.result-box.visible {
+    display: block;
+}
 
 .result-box.pet {
     background: var(--green-soft);
@@ -219,8 +227,13 @@ h4 {
     margin-bottom: .25rem;
 }
 
-.result-box.pet .result-label { color: var(--green-deep); }
-.result-box.no-pet .result-label { color: #922B21; }
+.result-box.pet .result-label {
+    color: var(--green-deep);
+}
+
+.result-box.no-pet .result-label {
+    color: #922B21;
+}
 
 .result-text {
     display: block;
@@ -229,5 +242,10 @@ h4 {
     font-weight: 700;
 }
 
-.result-box.pet .result-text { color: var(--green-deep); }
-.result-box.no-pet .result-text { color: #C0392B; }
+.result-box.pet .result-text {
+    color: var(--green-deep);
+}
+
+.result-box.no-pet .result-text {
+    color: #C0392B;
+}
