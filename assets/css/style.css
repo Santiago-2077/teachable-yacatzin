@@ -1,6 +1,6 @@
 /* ================================================
-   RECICLAJE YACATZIN â€” Design System v2.0
-   Official Brand Palette Â· Production Ready
+   RECICLAJE YACATZIN – Design System v2.0
+   Official Brand Palette · Production Ready
    ================================================ */
 
 :root {
@@ -27,7 +27,6 @@
     --muted: #6B7280;
     --border: #E5E7EB;
     --line: #E5E7EB;
-    /* alias */
 
     /* === Gradients === */
     --grad-main: linear-gradient(135deg, #56CCF2, #6BCB3D);
@@ -90,3 +89,145 @@ h4 {
     letter-spacing: -.01em;
     line-height: 1.2;
 }
+
+/* ========= LAYOUT ========= */
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem 3rem;
+}
+
+.logo {
+    width: 220px;
+    margin-bottom: 1.75rem;
+    object-fit: contain;
+}
+
+/* ========= CARD ========= */
+.card {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: 2rem 2rem 2.5rem;
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.card-title {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--green-deep);
+    margin: 0;
+    text-align: center;
+}
+
+/* ========= MASCOT ========= */
+.mascot {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    transition: opacity .3s;
+    filter: drop-shadow(0 6px 16px rgba(107, 203, 61, .18));
+}
+
+/* ========= WEBCAM ========= */
+#webcam-container canvas {
+    border-radius: var(--radius);
+    border: 3px solid var(--border);
+    display: block;
+}
+
+/* ========= BUTTONS ========= */
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+}
+
+.btn-start {
+    background: var(--grad-main);
+    color: #fff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border: none;
+    border-radius: var(--radius-pill);
+    padding: .7rem 2.5rem;
+    cursor: pointer;
+    box-shadow: var(--shadow-green);
+    transition: opacity .2s;
+    width: 100%;
+}
+
+.btn-start:hover { opacity: .85; }
+.btn-start:disabled { opacity: .5; cursor: not-allowed; }
+
+.btn-stop {
+    display: none;
+    background: transparent;
+    color: #C0392B;
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 2px solid #E74C3C;
+    border-radius: var(--radius-pill);
+    padding: .5rem 1.75rem;
+    cursor: pointer;
+    transition: background .2s, color .2s;
+    width: 100%;
+}
+
+.btn-stop:hover {
+    background: #FFF0F0;
+}
+
+/* ========= RESULT BOX ========= */
+.result-box {
+    width: 100%;
+    border-radius: var(--radius);
+    padding: 1rem 1.5rem;
+    text-align: center;
+    display: none;
+}
+
+.result-box.visible { display: block; }
+
+.result-box.pet {
+    background: var(--green-soft);
+    border: 2px solid var(--green);
+}
+
+.result-box.no-pet {
+    background: #FFF0F0;
+    border: 2px solid #E74C3C;
+}
+
+.result-label {
+    display: block;
+    font-family: "Work Sans", sans-serif;
+    font-size: .85rem;
+    font-weight: 500;
+    margin-bottom: .25rem;
+}
+
+.result-box.pet .result-label { color: var(--green-deep); }
+.result-box.no-pet .result-label { color: #922B21; }
+
+.result-text {
+    display: block;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.result-box.pet .result-text { color: var(--green-deep); }
+.result-box.no-pet .result-text { color: #C0392B; }
