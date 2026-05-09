@@ -79,6 +79,21 @@ body::before {
     background: radial-gradient(circle at 1px 1px, rgba(107, 203, 61, .07) 1px, transparent 0);
     background-size: 28px 28px;
     opacity: .65;
+    z-index: 0;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: url('../img/fondo-pagina1.webp');
+    background-size: cover;
+    background-position: center;
+    opacity: .13;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+    z-index: 0;
 }
 
 h1,
@@ -97,12 +112,15 @@ h4 {
     flex-direction: column;
     align-items: center;
     padding: 2rem 1rem 3rem;
+    position: relative;
+    z-index: 1;
 }
 
 .logo {
     width: 420px;
     margin-bottom: 1.75rem;
     object-fit: contain;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .25));
 }
 
 /* ========= CARD ========= */
