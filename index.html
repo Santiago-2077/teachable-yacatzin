@@ -38,6 +38,14 @@
                 <span class="result-text" id="result-text"></span>
             </div>
         </div>
+
+        <footer class="footer-card">
+            <p><strong>Reciclaje Yacatzin</strong> — Proyecto social y ambiental · <span id="year"></span></p>
+            <p class="footer-card__links">
+                <a href="https://reciclajeyacatzin.app/about.html">Conoce el proyecto</a> · <a class="beta-link"
+                    href="https://reciclajeyacatzin.app/project.html">Beta</a>
+            </p>
+        </footer>
     </div>
 
     <div id="label-container" hidden></div>
@@ -47,6 +55,7 @@
         src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="script.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 
 </html>

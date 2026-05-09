@@ -267,3 +267,51 @@ h4 {
 .result-box.no-pet .result-text {
     color: #C0392B;
 }
+
+/* ========= FOOTER CARD ========= */
+.footer-card {
+    margin-top: 1.25rem;
+    background: var(--surface);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow);
+    padding: .75rem 1.5rem;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    color: var(--muted);
+    font-size: .82rem;
+}
+
+.footer-card p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.footer-card strong {
+    color: var(--green-deep);
+    font-weight: 600;
+}
+
+.footer-card__links {
+    margin-top: .25rem !important;
+    font-size: .78rem;
+}
+
+.footer-card a {
+    color: var(--green-deep);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .15s;
+}
+
+.footer-card a:hover {
+    color: var(--green);
+}
+
+.footer-card .beta-link {
+    color: var(--blue);
+}
+
+.footer-card .beta-link:hover {
+    color: var(--blue-2);
+}
