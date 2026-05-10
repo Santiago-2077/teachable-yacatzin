@@ -309,9 +309,9 @@ h4 {
 }
 
 .footer-card .beta-link {
-    color: var(--blue);
+    color: #946F00;
 }
 
 .footer-card .beta-link:hover {
-    color: var(--blue-2);
+    color: #B08A00;
 }
